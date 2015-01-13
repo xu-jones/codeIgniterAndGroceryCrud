@@ -1,0 +1,105 @@
+body,dl,dt,dd,ol,ul,pre,form,field,input,p,blockquote,th,td,h1,h2,h3,h4,h5,h6 {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0}
+body{background-image: url(/admin_images/bg_body.jpg)}
+img {
+	border:0;
+}
+ul,ol {
+	list-style:none}
+p,li {
+	line-height:1.8em}
+.b {
+	font-weight:700}
+.f_l {
+	float:left;
+	left:200px;
+	padding-left:200px}
+.f_r {
+	float:right;
+	padding-right:200px}
+.wt12 {
+	font-family:Arial,"宋体";
+	color:#160702}
+.bt14 {
+	font-size:14px;
+	font-weight:700}
+.cursor {
+	cursor:pointer}
+.alink {
+	color:#fff;
+	text-decoration:none}
+
+#main {
+	height:auto;
+	margin:0 auto;}
+#login {
+	width:345px;
+	background-color:#f3f3f3;
+	margin:0 auto;
+	position:relative;
+        border: 1px solid #d3d3d3;box-shadow: 0 2px 2px 0 #e3e3e3;
+}
+#foot {
+	clear:both;position:relative;
+	margin:0 auto}
+#copyright {
+	text-align:center;font-size:14px;margin-bottom:10px;
+}
+.browser p{text-align: center;}
+.browser ul{list-style-type:none;margin: 0 auto;width: 500px;}
+.browser ul li{cursor:pointer;float:left;text-align: center;margin:10px 60px 0 0;}
+.browser a{border-bottom:0 none;cursor:pointer;font-weight:bold;text-decoration:none;color:black;}
+.browser img{float:left;margin:0 0 10px 5px;}
+.browser span{float:left;display:inline-block;clear:both;}
+input {
+	line-height:20px;
+	height:22px;
+	border:1px solid #30;
+	text-indent:5px;
+	vertical-align:middle}
+.input_user {
+	width:140px}
+.input_pwd {
+	width:140px}
+.input_chk {
+	width:70px}
+#login_form {
+	width:210px;
+	height:250px;margin:0 auto;}
+#login_form dl {width:210px;}
+#login_form dt {
+	width:60px;
+	height:30px;
+	float:left;
+	line-height:25px;
+	font-size:14px;
+	font-weight:700}
+#login_form dd {
+	height:30px;
+	float:left;
+	text-align:left}
+
+#codeimg {
+	height:24px}
+#login_form p {margin:17px 0;text-align:center;}
+.loginbtn {
+	height:26px;
+	width:100px;
+	border:none;
+        background-color:#6bb05f;
+        border-radius: 3px;
+        color:white;
+        font-size:16px;
+	cursor:pointer;}
+label.error {
+	float:none;
+	color:red;
+	vertical-align:middle;
+	margin-left:5px}
+input.error,select.error,textarea.error {
+	border:#d3d3d3 solid 1px}
+
+#new_code {font-size:16px;vertical-align:middle;}

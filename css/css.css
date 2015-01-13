@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.Helvetica{font-family: "Helvetica";}
+body,p,ul,ol,span{margin: 0 auto;padding: 0px;border: 0px none;outline: 0px none;font-size:12px;font-family:"Microsoft YaHei";}
+body{background-color:#eeefef;}
+ul,ol{list-style-type:none;}
+img{border: 0;padding:0;margin:0;display:block;}
+.clear:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clear{zoom:1}

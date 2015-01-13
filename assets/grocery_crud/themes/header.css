@@ -1,0 +1,5 @@
+@charset "utf-8";
+.header_a{height: 48px;line-height: 48px;text-align: center;font-size: 16px;font-family: "Microsoft Yahei";color: white;display: inline-block;padding: 0 15px;margin: 10px;text-decoration: none;}
+.header_a_on{background-color: #555;}
+.header_a_out{background-color:  #0598CB;}
+.header_a:hover{background-color: #555;}
