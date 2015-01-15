@@ -2,6 +2,7 @@
 
 	$this->set_css($this->default_theme_path.'/flexigrid/css/flexigrid.css');
 	$this->set_js_lib($this->default_theme_path.'/flexigrid/js/jquery.form.js');
+    $this->set_js_lib($this->default_javascript_path.'/jquery_plugins/jquery.form.min.js');
 	$this->set_js_config($this->default_theme_path.'/flexigrid/js/flexigrid-add.js');
 
 	$this->set_js_lib($this->default_javascript_path.'/jquery_plugins/jquery.noty.js');
@@ -20,7 +21,7 @@
 		</div>
 	</div>
 <div id='main-table-box'>
-	<?php echo form_open( $insert_url, 'method="post" id="crudForm" autocomplete="off" enctype="multipart/form-data"'); ?>
+	<?php echo form_open( $insert_url, 'method="post" id="crudForm"  enctype="multipart/form-data"'); ?>
 		<div class='form-div'>
 			<?php
 			$counter = 0;
@@ -56,9 +57,9 @@
 				<input id="form-button-save" type='submit' value='<?php echo $this->l('form_save'); ?>'  class="btn btn-large"/>
 			</div>
 <?php 	if(!$this->unset_back_to_list) { ?>
-<!--			<div class='form-button-box'>
-				<input type='button' value='</?php echo $this->l('form_save_and_go_back'); ?>' id="save-and-go-back-button"  class="btn btn-large"/>
-			</div>-->
+<!--			<div class='form-button-box'>-->
+<!--				<input type='button' value='--><?php //echo $this->l('form_save_and_go_back'); ?><!--' id="save-and-go-back-button"  class="btn btn-large"/>-->
+<!--			</div>-->
 			<div class='form-button-box'>
 				<input type='button' value='<?php echo $this->l('form_cancel'); ?>' class="btn btn-large" id="cancel-button" />
 			</div>

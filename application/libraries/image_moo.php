@@ -60,7 +60,7 @@
  * TO DO
  *
  * THANKS
- * Matja?for poiting out the save_pa bug (should of tested it!)
+ * Matjaž for poiting out the save_pa bug (should of tested it!)
  * Cahva for posting yet another bug in the save_pa (Man I can be silly sometimes!)
  * Cole spotting the resize flaw and providing a fix
  *

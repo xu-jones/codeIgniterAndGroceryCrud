@@ -29,7 +29,7 @@
 	$lang['form_go_back_to_list'] 	= '返回列表';
 
 	$lang['form_add'] 				= '新增';
-	$lang['insert_success_message'] = '新增记录成功';
+	$lang['insert_success_message'] = '新增记录成功保存到数据库';
 	$lang['form_or']				= '或者';
 	$lang['form_save'] 				= '保存';
 	$lang['form_insert_loading'] 	= '载入,并保存...';
@@ -38,8 +38,8 @@
 	$lang['form_upload_delete'] 	= '删除';
 	$lang['form_button_clear'] 		= '清空';
 
-	$lang['delete_success_message'] = '删除成功.';
-	$lang['delete_error_message'] 	= '删除失败.';
+	$lang['delete_success_message'] = '从数据库里成功删除你的数据.';
+	$lang['delete_error_message'] 	= '没有从数据库中删除你的数据.';
 
 	/* Javascript messages */
 	$lang['alert_add_form']			= '你新增的数据可能没有保存.\\n确定返回列表吗?';
@@ -62,8 +62,8 @@
 	/* Upload functionality */
 	$lang['string_delete_file'] 	= "删除文件";
 	$lang['string_progress'] 		= "Progress: ";
-	$lang['error_on_uploading'] 	= "An error has occurred on uploading.";
-	$lang['message_prompt_delete_file'] 	= "确定删除该文件?";
+	$lang['error_on_uploading'] 	= "上传时遇到错误.";
+	$lang['message_prompt_delete_file'] 	= "Are you sure that you want to delete this file?";
 
 	$lang['error_max_number_of_files'] 	= "You can only upload one file each time.";
 	$lang['error_accept_file_types'] 	= "You are not allow to upload this kind of extension.";
@@ -76,4 +76,4 @@
 	$lang['minimize_maximize'] = 'Minimize/Maximize';
 
 	/* Added in version 1.4 */
-	$lang['list_view'] = '查看';
+	$lang['list_view'] = 'View';

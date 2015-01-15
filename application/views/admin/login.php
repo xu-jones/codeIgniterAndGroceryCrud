@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>后台管理系统登入界面</title>
         <link href="<?php echo base_url('css/login.css') ?>" rel="stylesheet" type="text/css" />
-        <script src="<?php echo base_url('assets/grocery_crud/js/jquery-1.10.2.min.js') ?>"></script>
+        <script src="<?php echo base_url('assets/grocery_crud/js/jquery-1.11.1.min.js') ?>"></script>
     </head>
     <body >
 

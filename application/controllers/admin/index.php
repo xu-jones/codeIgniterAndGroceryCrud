@@ -32,13 +32,17 @@ class Index extends Admin {
         $this->crud->set_theme('flexigrid');
         $this->crud->set_subject('（焦点图）');
         $this->crud->where('category', '11');
-        $this->crud->columns('img','description');
+        $this->crud->columns('img','description','title');
         $this->crud->display_as(array(
             'img' => '图片(1000*600)',
             'description' =>'多张图片上传'
         ));
+        $this->crud->add_action('首页显示', 'http://www.grocerycrud.com/assets/uploads/general/smiley.png', 'index', 'tuijian', array($this, 'tuijian_on_out'));
+        $this->crud->callback_add_field('title',function(){
+            return '3';
+        });
         $this->crud->field_type('category', 'hidden', '11');
-        $this->crud->fields('img', 'description','category');
+        $this->crud->fields('img', 'description','category','title');
         $this->crud->required_fields('img');
         $this->crud->set_field_upload('img', $this->upload_dir);
         
