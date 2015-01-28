@@ -28,6 +28,7 @@
                             <input type="submit" class="loginbtn" name="Submit" value="登  录"/>
                         </p>
                     </form>
+                    <?php echo isset($_GET['error'])?'<p style="color:red">'.$_GET['error'].'</p>':'';?>
                 </div>
             </div>
 <!--            <div id="foot">

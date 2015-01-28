@@ -4,17 +4,21 @@
  * @author 在我面前跪下
  * @data 2013-11-3 14:40:31
  */
-class Login extends CI_Controller {
+class Login extends CI_Controller
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
-    public function index() {
+    public function index()
+    {
         $this->load->view('admin/login');
     }
 
-    public function login_in() {
+    public function login_in()
+    {
         $this->load->library('session');
         $data['user_name'] = $this->input->post('name');
         $data['user_password'] = md5($this->input->post('password'));
@@ -23,17 +27,22 @@ class Login extends CI_Controller {
         if ($this->session->userdata('user_name')) {
             redirect('admin/index');
         } else {
-            //$this->session->set_userdata('error','用户名或者密码错误');
-            redirect('admin/login');
+            redirect('admin/login?error=用户名或者密码错误');
         }
     }
 
-    public function change_password() {
-        $output->li = '';
+    /**
+     * @return 修改密码
+     */
+    public function change_password()
+    {
+        $output = new stdClass();
+        $output->li = 'change_password';
         $this->load->view('admin/change_password', $output);
     }
 
-    public function change_password_getJSON() {
+    public function change_password_getJSON()
+    {
         $p1 = md5($this->input->get('p1'));
         $p2 = md5($this->input->get('p2'));
         if ($p1 != $p2) {
@@ -46,7 +55,8 @@ class Login extends CI_Controller {
         exit();
     }
 
-    public function login_out() {
+    public function login_out()
+    {
         $this->load->library('session');
         $this->session->sess_destroy();
         redirect('admin/login');

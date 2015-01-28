@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>后台管理系统--修改密码</title>
         <link type="text/css" rel="stylesheet" href="<?php echo base_url('css/admin.css'); ?>" />
-        <script src="<?php echo base_url('assets/grocery_crud/js/jquery-1.10.2.min.js') ?>"></script>
+        <script src="<?php echo base_url('assets/grocery_crud/js/jquery-1.11.1.min.js') ?>"></script>
     </head>
     <body>
         <div class="header_nav">
@@ -44,6 +44,11 @@
                 $.getJSON('/admin/login/change_password_getJSON', {p1: p1, p2: p2}, function(data) {
                     if (data.code == '1') {
                         $('#password_error').html('修改成功！');
+                        $('#password').val('');
+                        $('#password2').val('');
+                        setTimeout(function(){
+                            $('#password_error').html('');
+                        },2700);
                     } else {
                         $('#password_error').html(data.info);
                     }

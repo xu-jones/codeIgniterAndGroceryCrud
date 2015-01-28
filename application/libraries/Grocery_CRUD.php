@@ -4233,7 +4233,7 @@ class Grocery_CRUD extends grocery_CRUD_States
                     require_once(QINIU . 'io.php');
                     //上传到七牛空间的名称 【需要修改】
                     $qiniuBucket = 'shecai-test';
-                    $uploadName = 'release-' . $upload_result[0]->name;//图片的名称
+                    $uploadName = $upload_result[0]->name;//图片的名称
                     $file = FCPATH . 'upload/' . $upload_result[0]->name;
                     $accessKey = 'RwJm_Cq0sV2XU_m7wqsAEUTlKxmz56knovbMvsjz';
                     $secretKey = 'JLkbeW5V8by6rabobccQ7AwNeHnxQK-ZT-WfwoKa';
