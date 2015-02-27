@@ -4231,14 +4231,10 @@ class Grocery_CRUD extends grocery_CRUD_States
                 if (isset($upload_result[0]->name)) {
                     require_once(QINIU . 'rs.php');
                     require_once(QINIU . 'io.php');
-                    //上传到七牛空间的名称 【需要修改】
-                    $qiniuBucket = 'shecai-test';
                     $uploadName = $upload_result[0]->name;//图片的名称
                     $file = FCPATH . 'upload/' . $upload_result[0]->name;
-                    $accessKey = 'RwJm_Cq0sV2XU_m7wqsAEUTlKxmz56knovbMvsjz';
-                    $secretKey = 'JLkbeW5V8by6rabobccQ7AwNeHnxQK-ZT-WfwoKa';
-                    Qiniu_setKeys($accessKey, $secretKey);
-                    $putPolicy = new Qiniu_RS_PutPolicy($qiniuBucket);
+                    Qiniu_setKeys(ACCESSKEY, SECRETKEY);
+                    $putPolicy = new Qiniu_RS_PutPolicy(QINIUBUCKET);
                     $upToken = $putPolicy->Token(null);
                     $putExtra = new Qiniu_PutExtra();
                     $putExtra->Crc32 = 1;
@@ -4246,7 +4242,7 @@ class Grocery_CRUD extends grocery_CRUD_States
                     if ($err !== null) {
                         throw new Exception($err->Err, $err->Code);
                     }
-                    $upload_result[0]->url = 'http://' . $qiniuBucket . '.qiniudn.com/' . $uploadName;
+                    $upload_result[0]->url = 'http://' . QINIUBUCKET . '.qiniudn.com/' . $uploadName;
                 }
                 $this->upload_layout($upload_result, $state_info->field_name);
                 break;

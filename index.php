@@ -173,6 +173,10 @@ if (defined('ENVIRONMENT'))
 	define('FCPATH', str_replace(SELF, '', __FILE__));
     //七牛
     define('QINIU', FCPATH.'application/libraries/qiniu/');
+    //上传到七牛空间的名称 【需要修改】
+    define('QINIUBUCKET','shecai-img');
+    define('ACCESSKEY','RwJm_Cq0sV2XU_m7wqsAEUTlKxmz56knovbMvsjz');
+    define('SECRETKEY','JLkbeW5V8by6rabobccQ7AwNeHnxQK-ZT-WfwoKa');
 	// Name of the "system folder"
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
 
